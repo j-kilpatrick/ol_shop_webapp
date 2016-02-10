@@ -1,5 +1,5 @@
 app.controller('loginCtrl',loginCtrl);
 
-function loginCtrl() {
+function loginCtrl(productSrv) {
 	console.log("Login control!");
 };
