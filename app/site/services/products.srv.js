@@ -24,7 +24,7 @@ ProductService.prototype.getProducts = function(){
 
 ProductService.prototype.addProduct = function(product){
 	var _this = this;
-	this.api.request('/products',product,'PUT')
+	this.api.request('/products',product,'POST')
 	.then(function(res){
 		console.log(res);
 		if(res.status === 200){
@@ -38,13 +38,13 @@ ProductService.prototype.addProduct = function(product){
 
 ProductService.prototype.updateProduct = function(product,productId){
 	var _this = this;
-	this.api.request('/products/'+productId,product,'POST')
+	this.api.request('/products/'+productId,product,'PUT')
 	.then(function(res){
 		console.log(res);
 		if(res.status === 200){
 			//product was updated successfully
 			_this.updateProductList(product,productId);
-			
+			_this.state.go('admin.dash');
 		}
 	})
 }

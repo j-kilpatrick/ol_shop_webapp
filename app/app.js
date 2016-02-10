@@ -8,10 +8,27 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
 
 	$stateProvider
 	.state('shop',{
-		url:'/',
-		templateUrl:'',
-		controller:'',
-	});
+		url:'/shop',
+		templateUrl:'site/partials/shop-main.html',
+		controller:'shopCtrl as ctrl',
+	})
+  .state('admin',{
+    url:'/admin',
+    templateUrl:'site/partials/admin.html',
+    controller:'adminCtrl as ctrl',
+  })
+  .state('login',{
+   url:'/login',
+   templateUrl:'site/partials/login.html',
+   controller:'loginCtrl as ctrl',
+ })
+
+//  .otherwise('shop',{
+//    url:'/shop',
+//    templateUrl:'site/partials/shop-main.html',
+ //   controller:'ShopCtrl as ctrl',
+//  })
+  ;
 
 	$httpProvider.interceptors.push(function(){
        return {
