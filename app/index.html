@@ -14,13 +14,19 @@
 	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
 
 	<!-- App Controllers -->
+	<script type="text/javascript" src="app.js"></script>
 
 	<!-- App Services -->
 	<script type="text/javascript" src="site/services/api.srv.js"></script>
 	<script type="text/javascript" src="site/services/products.srv.js"></script>
 
 </head>
-<body ng-model="shopApp">
+<body ng-app="shopApp">
+<div ui-view class="wrapper"></div>
+<a ui-sref="shop">Shop</a>
+<a ui-sref="admin">Admin</a>
+<a ui-sref="cart">Cart</a>
+
 
 </body>
 </html>
