@@ -22,12 +22,6 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
    templateUrl:'site/partials/login.html',
    controller:'loginCtrl as ctrl',
  })
-
-//  .otherwise('shop',{
-//    url:'/shop',
-//    templateUrl:'site/partials/shop-main.html',
- //   controller:'ShopCtrl as ctrl',
-//  })
   ;
 
 	$httpProvider.interceptors.push(function(){
