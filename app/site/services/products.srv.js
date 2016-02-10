@@ -44,7 +44,7 @@ ProductService.prototype.updateProduct = function(product,productId){
 		if(res.status === 200){
 			//product was updated successfully
 			_this.updateProductList(product,productId);
-			
+			_this.state.go('admin.dash');
 		}
 	})
 }
