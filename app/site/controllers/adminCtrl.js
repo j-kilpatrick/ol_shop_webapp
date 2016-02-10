@@ -5,5 +5,5 @@ function adminCtrl(productSrv, $state) {
 	var ctrl = this;
 	ctrl.$state = $state;
 	ctrl.productSrv = productSrv;
-	ctrl.products = products;
+//	ctrl.products = products;
 };
