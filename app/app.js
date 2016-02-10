@@ -10,17 +10,17 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
 	.state('shop',{
 		url:'/shop',
 		templateUrl:'site/partials/shop-main.html',
-		controller:'shopApp as ctrl',
+	//	controller:'shopApp as ctrl',
 	})
   .state('admin',{
     url:'/admin',
     templateUrl:'site/partials/admin.html',
-    controller:'shopApp as ctrl',
+ //   controller:'shopApp as ctrl',
   })
   .state('login',{
    url:'/login',
    templateUrl:'site/partials/login.html',
-   controller:'shopApp as ctrl',
+//   controller:'shopApp as ctrl',
  })
 
 //  .otherwise('shop',{
