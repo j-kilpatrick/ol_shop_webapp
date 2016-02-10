@@ -6,6 +6,7 @@ function adminCtrl(productSrv, $state) {
 	ctrl.$state = $state;
 	ctrl.productSrv = productSrv;
 //	ctrl.products = products;
+<<<<<<< HEAD
 
 
 	//Login check (later)
@@ -41,3 +42,6 @@ function adminCtrl(productSrv, $state) {
 
 }
 
+=======
+};
+>>>>>>> 7aa883887cadcfd735bf56a9a55e8482496f5ad8

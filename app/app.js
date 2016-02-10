@@ -27,15 +27,7 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
     url:'/shop',
     templateUrl:'site/partials/shop-main.html',
     controller:'shopCtrl as ctrl',
-  })
-  
-
-//  .otherwise('shop',{
-//    url:'/shop',
-//    templateUrl:'site/partials/shop-main.html',
- //   controller:'ShopCtrl as ctrl',
-//  })
-  ;
+  });
 
 	$httpProvider.interceptors.push(function(){
        return {
