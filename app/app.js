@@ -4,7 +4,7 @@ var app = angular.module('shopApp',['ui.router',]);
 
 app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
 	
-	$urlRouterProvider.otherwise('/');
+	$urlRouterProvider.otherwise('/shop');
 
 	$stateProvider
 	.state('shop',{
