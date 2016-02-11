@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Admin</title>
-</head>
-<body>
+<div ui-view>
+	<section id="admin" class="clearfix">
+	<aside class="nav-panel">
 
-	<h1>Admin</h1>
-	<div ui-view>
+		<h3>Admin Panel</h3>
+		<ul>
+			<li><a ui-sref="admin.dash">Products</a></li>
+			<li><a ui-sref="admin.add_product">Add Product</a></li>
+			<li><a ng-click="ctrl.logout()">Log Out</a></li>
+		</ul>
+	</aside>
+
+	<article class="main-content">
 		
-		<p>Admin Html goes here</p>
-		<!--All HTML inside this ui-view DIV-->
-
-	</div>
-
-</body>
-</html>
+	</article>
+</section>
+</div>
