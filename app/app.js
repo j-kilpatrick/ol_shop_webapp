@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('shopApp',['ui.router', 'ui.bootstrap']);
+var app = angular.module('shopApp',['ui.router']);
 
 app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
 	
@@ -28,12 +28,21 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
     templateUrl:'site/partials/shop-main.html',
     controller:'shopCtrl as ctrl',
   })
-  .state('cart',{
-    url:'/cart',
-    templateUrl:'site/partials/cart.html',
-    controller:'cartCtrl as ctrl',
+  .state('shop.cart',{
+      url: '/cart',
+      templateUrl: "site/partials/cart.html",
+      controller:'shopCtrl as ctrl',
   })
-  ;
+;
+//  .state('cart.bd',{
+//    url:'/cart',
+//    views:{
+//      "cart":{
+//      templateUrl: "site/partials/cart.html",
+//    }
+   // controller:'shopCtrl as ctrl',
+//  }
+//  });
 
 	$httpProvider.interceptors.push(function(){
        return {
