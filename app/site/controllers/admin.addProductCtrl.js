@@ -29,15 +29,15 @@ function addProductCtrl($stateParams,api,productSrv){
 
 			// 	}
 			// }
-		})
+		}
 	}
 
 
-}
+})
 }
 }
 
-ProductCtrl.prototype.addProduct = function(){
+addProductCtrl.prototype.addProduct = function(){
 	var ctrl = this;
 	//TODO #2
 	//create product object, pass to plugin service
@@ -55,7 +55,7 @@ ProductCtrl.prototype.addProduct = function(){
 
 }
 
-ProductCtrl.prototype.updateProduct = function(){
+addProductCtrl.prototype.updateProduct = function(){
 	var ctrl = this;
 
 	//TODO #2
@@ -65,7 +65,7 @@ ProductCtrl.prototype.updateProduct = function(){
 	ctrl.productSrv.updateProduct(ctrl.product, ctrl.product.id);
 }
 
-ProductCtrl.prototype.deleteProduct = function(){
+addProductCtrl.prototype.deleteProduct = function(){
 	var ctrl = this;
 
 	//TODO #2

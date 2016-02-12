@@ -27,18 +27,9 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div ui-view>
-  <div class="container">
-   
-     <!--   Nav -->
-     <div class="nav">
-         <ul class="u-pull-right">
-             <li>Login</li>
-             <li class="cart-icon">Cart</li>
-         </ul>
-     </div>
+
      
-     
-    
+    <div class="container">
      <!--  Hero    -->
         <div class="hero">
            <div class="row">
@@ -70,31 +61,31 @@
      
      
      <!--  Products   -->
-     <div class="row products-main">
-      <div class="four columns">
+    <div class="row products-main">
+      <div class="four columns" ng-repeat="product in ctrl.products">
           <div class="product-img">
-              <img src="assets/img/cup.png">
+              <img ng-src="{{product.image}}" style="width:400 height:345">
           </div>
           <div class="product-info">
               <div class="nine columns product-name">
-                  <p>Product Name</p>
+                  <p>{{product.label}}</p>
               </div>
               <div class="three columns price">
-                  <p>$30</p>
+                  <p>$ {{product.price}}</p>
               </div>
           </div>
       </div>
       
-      <div class="four columns">
+ <!--      <div class="four columns">
           <div class="product-img">
               <img src="assets/img/jar.png">
           </div>
           <div class="product-info">
               <div class="nine columns product-name">
-                  <p>Product Name</p>
+                  <p>{{ctrl.products[1].label}}</p>
               </div>
               <div class="three columns price">
-                  <p>$30</p>
+                  <p>$ {{ctrl.products[1].price}}</p>
               </div>
           </div>
       </div>
@@ -105,13 +96,13 @@
           </div>
           <div class="product-info">
               <div class="nine columns product-name">
-                  <p>Product Name</p>
+                  <p>{{ctrl.products[2].label}}</p>
               </div>
               <div class="three columns price">
-                  <p>$30</p>
+                  <p>$ {{ctrl.products[2].price}}</p>
               </div>
           </div>
-      </div>
+      </div> -->
     </div>
     
     
