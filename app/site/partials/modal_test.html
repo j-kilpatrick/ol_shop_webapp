@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>The 460 House</title>
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/skeleton.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div ui-view>
+        <div class="container">
+
+            <!-- Cart -->
+            <div class="row">
+                <div class="twelve columns">
+                    <button class="md-trigger" data-modal="modal-12">Open Cart</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns">
+
+                    <div class="md-modal md-effect-12" id="modal-12">
+                        <div class="md-content">
+                            <div class="row twelve columns">
+                                <h3>Shopping Cart</h3>
+                            </div>
+                            <div class="cart-table">
+                                <table class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Product 1</td>
+                                            <td>$30</td>
+                                            <td>1</td>
+                                            <td class="remove">
+                                                <button class="btn-remove">X</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Product 2</td>
+                                            <td>$40</td>
+                                            <td>2</td>
+                                            <td class="remove">
+                                                <button class="btn-remove">X</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <button class="md-close">Continue Shopping</button>
+                                    <button class="btn-checkout">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End Twelve -->
+            </div>
+            <!-- End Row -->
+            <div class="md-overlay"></div>
+
+            <!--  Hero    -->
+            <div class="hero">
+                <div class="row">
+                    <h1>The Store</h1>
+                </div>
+
+            </div>
+
+
+            <!--  Filter / Browse   -->
+            <div class="filters">
+                <div class="row">
+                    <div class="eight columns">
+                        <ul>
+                            <li>Category 1</li>
+                            <li class="active">Category 2</li>
+                            <li>Category 3</li>
+                            <li>Category 4</li>
+                            <li>Category 5</li>
+                        </ul>
+                    </div>
+                    <div class="four columns u-pull-right">
+                        <form>
+                            <input type="text" class="search" placeholder="Search For Products">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--  Products   -->
+            <div class="row products-main">
+                <div class="four columns">
+                    <div class="product-img">
+                        <img src="assets/img/cup.png">
+                    </div>
+                    <div class="product-info">
+                        <div class="nine columns product-name">
+                            <p>Product Name</p>
+                        </div>
+                        <div class="three columns price">
+                            <p>$30</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="four columns">
+                    <div class="product-img">
+                        <img src="assets/img/jar.png">
+                    </div>
+                    <div class="product-info">
+                        <div class="nine columns product-name">
+                            <p>Product Name</p>
+                        </div>
+                        <div class="three columns price">
+                            <p>$30</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="four columns">
+                    <div class="product-img">
+                        <img src="assets/img/cup.png">
+                    </div>
+                    <div class="product-info">
+                        <div class="nine columns product-name">
+                            <p>Product Name</p>
+                        </div>
+                        <div class="three columns price">
+                            <p>$30</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row products-main">
+                <div class="four columns">
+                    <div class="product-img">
+                        <img src="assets/img/lamp.png">
+                    </div>
+                    <div class="product-info">
+                        <div class="nine columns product-name">
+                            <p>Product Name</p>
+                        </div>
+                        <div class="three columns price">
+                            <p>$30</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="four columns">
+                    <div class="product-img">
+                        <img src="assets/img/bottle.png">
+                    </div>
+                    <div class="product-info">
+                        <div class="nine columns product-name">
+                            <p>Product Name</p>
+                        </div>
+                        <div class="three columns price">
+                            <p>$30</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="four columns">
+                    <div class="product-img">
+                        <img src="assets/img/lamp-b.png">
+                    </div>
+                    <div class="product-info">
+                        <div class="nine columns product-name">
+                            <p>Product Name</p>
+                        </div>
+                        <div class="three columns price">
+                            <p>$30</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Container -->
+    </div>
+    <!-- End UI View -->
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!-- Javascript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="js/cssParser.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/modalEffects.js"></script>
+</body>
+
+</html>

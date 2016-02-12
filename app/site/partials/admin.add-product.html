@@ -1,42 +1,41 @@
 <section>
 ​    <div class="row">
         <div class="add-product">
-            <form>
+            <form ng-submit="ctrl.addProduct()">
                 <div class="row">
                     <div class="twelve columns">
                         <label for="product-name">Product Name</label>
-                        <input class="u-full-width" type="text" placeholder="Product Name" id="product-name">
+                        <input class="u-full-width" type="text" placeholder="Product Name" id="product-name" ng-model="ctrl.name" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="four columns">
+
                         <label for="categories">Category</label>
-                        <select class="u-full-width" id="category">
-                            <option value="Option 1">Category 1</option>
-                            <option value="Option 2">Category 2</option>
-                            <option value="Option 3">Category 3</option>
-                        </select>
+                        <select class="u-full-width" ng-options="option.value as option.label for option in ctrl.categories" ng-model="ctrl.category" requiered>
+                        
                     </div>
                     <div class="four columns">
+
                         <label for="image">Image URL</label>
-                        <input class="image u-full-width" type="text" placeholder="img-image.jpg" id="image">
+                        <input class="image u-full-width" type="text" placeholder="img-image.jpg" id="image" ng-model="ctrl.image" required>
+
                     </div>
                     <div class="four columns">
                         <label for="price">Price ($)</label>
-                        <input class="price u-full-width" type="number" id="price" placeholder="20">  
+                        <input class="price u-full-width" type="number" id="price" placeholder="0" ng-model="ctrl.price" required>  
                     </div>
                 </div>
                 <div class="row">
                     <div class="twelve columns">
                         <label for="description">Description</label>
-                        <textarea class="u-full-width" name="description" id="description" placeholder="Pellentesque habitant morbi tristique senectus et netus."></textarea>
+                        <textarea class="u-full-width" name="description" id="description" placeholder="Enter description" ng-model="ctrl.description" required></textarea>
                     </div>
                 </div>
                 <input class="button-primary u-pull-right" type="submit" value="Add Product">
             </form>
 ​
         </div>
-        <!-- End Add-Product -->
     </div>
     
     
@@ -58,28 +57,19 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Product Name</td>
-                        <td>Category 1</td>
-                        <td>img-image.jpg</td>
-                        <td>$30</td>
-                        <td>Description</td>
+                    <tr ng-repeat="product in ctrl.products">
+                        <td>{{product.name}}</td>
+                        <td>{{product.category}}</td>
+                        <td>{{product.image}}</td>
+                        <td>{{product.price}}</td>
+                        <td>{{product.description}}</td>
                         <td class="edit">Edit</td>
                         <td class="delete">Delete</td>
                     </tr>
-                    <tr>
-                        <td>Product Name</td>
-                        <td>Category 1</td>
-                        <td>img-image.jpg</td>
-                        <td>$30</td>
-                        <td>Description</td>
-                        <td class="edit">Edit</td>
-                        <td class="delete">Delete</td>
-                    </tr>
+                   
                 </tbody>
             </table>
         </div>
-        <!-- End View-Products -->
     </div>
 
 ​

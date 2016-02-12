@@ -11,7 +11,7 @@
 
 
 /* Nav */
-
+/*
 .nav .cart-icon {
     border: 1px solid #fff;
     margin-right: 0;
@@ -27,10 +27,10 @@
     padding: 15px;
     color: #fff;
 }
+*/
 
 
-
-/* Cart */
+/* Cart Old */
 .cart {
     margin: auto;
     margin-top: 50px;
@@ -67,7 +67,6 @@
     border: none;
     padding-top: 5px;
 }
-
 
 
 /* Homepage - Hero */
@@ -157,3 +156,38 @@
     padding-right: 10px;
 }
 
+/* Admin */
+​
+.add-product {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    font-size: 11px;
+}
+​
+.add-product .button-primary {
+    margin: 0;
+    font-size: 11px;
+}
+​
+.add-product form {
+    margin: 0;
+}
+​
+.view-products {
+    font-size: 11px;
+    padding: 0px 50px;
+}
+​
+.view-products .delete {
+    color: #ccc;
+}
+​
+.view-products .edit {
+    color: deepskyblue;
+}
+​
+.edit,
+.delete {
+    font-size: 10px;
+}
