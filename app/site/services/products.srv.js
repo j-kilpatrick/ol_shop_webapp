@@ -10,6 +10,7 @@ function ProductService($state,api){
 		{label:'Cruisers',value:'cat2'},
 		{label:'Longboards',value:'cat3'}
 	];
+	this.filter = headerCtrl.filter
 }
 
 

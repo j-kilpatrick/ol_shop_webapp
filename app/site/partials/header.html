@@ -1,4 +1,4 @@
-<div ng-controller="headerCtrl">
+<div ng-controller="headerCtrl as ctrl">
                 <!-- Static navbar -->
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -13,13 +13,19 @@
 
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
+                   
                     <ul class="nav navbar-nav">
                        
                          
-                        <li class="active" ng-click="ctrl.filter = '' ">Home</li>
-                        <li class="active"  ng-repeat="cat in ctrl.categories"><a ng-click="ctrl.showProductsByCat(cat.label)" >{{cat.label}}</a></li>
+                        <li class="active"><a ng-click="ctrl.showProductsByCat('')">Home</a></li>
+                        
+                        <li class="active"  ng-repeat="cat in ctrl.categories">
+                        <a ng-click="ctrl.showProductsByCat(cat.label)">
+                        {{cat.label}}
+                        </a></li>
                         
                     </ul>
+                   
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a ui-sref="login">Login</a></li>
                         <li><a ui-sref="shop.cart">Cart</a></li>
@@ -34,3 +40,5 @@
         <div ui-view="cart">  
         </div>
 </div>
+
+

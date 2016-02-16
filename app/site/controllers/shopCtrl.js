@@ -8,20 +8,9 @@ function shopCtrl(productSrv, $state) {
 	ctrl.products = productSrv.products;
 	
 	ctrl.categories = ctrl.productSrv.categories;
-	console.log(ctrl.categories)
 
-
-	ctrl.filter = "";
+	ctrl.filter = productSrv.filter;
 	
-
-
-
-	ctrl.showProductsByCat = function(cat){
-		var ctrl = this;
-		ctrl.filter = cat;
-
-		console.log(ctrl.filter)
-	}
 
 };
 
