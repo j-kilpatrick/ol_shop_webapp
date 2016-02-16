@@ -1,0 +1,184 @@
+/* Global */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-love {
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+
+/* Nav */
+.nav-slogan {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.decks {
+    font-weight: 300;
+}
+
+.sixty {
+    font-weight: 600;
+}
+
+/* Products */
+
+.products img {
+    margin: auto;
+}
+
+.details {
+    margin-top: -20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.price {
+    font-weight: 300;
+}
+
+.product-image {
+    height: 90%;
+    width: 90%;
+}
+
+.product-hero {
+    width: 600px;
+}
+
+
+/* Modal */
+
+.modal-wrap {
+    max-width: 600px;
+    background: #FFFFFF;
+    border: 1px solid #B0B0B0;
+    box-shadow: 0px 2px 21px 0px rgba(192, 192, 192, 0.50);
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+.modal-bg {
+    max-height: 300px;
+    padding: 0px;
+}
+
+.modal-wrap .product-image {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.modal-wrap .product-details {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: right;
+    padding-right: 60px;
+    padding-left: 40px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.modal-wrap .product-details h2 {
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.modal-wrap .product-details .modal-price {
+    text-align: right;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.modal-wrap .product-details button {
+    /*margin-top: 70px;*/
+    min-width: 150px;
+    text-align: right;
+    background: #fff;
+    color: #999;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+}
+
+.modal-wrap .product-details button:hover {
+    background: #3cb0fd;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+
+.footer {
+    margin-bottom: 0px;
+}
+
+
+/* Cart */
+.cart-wrapper {
+    max-width: 750px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    min-height: 400px;
+}
+
+.cart-table {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.btn-continue {
+    margin-left: 25px;
+    background: white;
+    color: #333;
+}
+
+.btn-checkout:hover {
+    color: #fff;
+    background: green;
+}
+
+/* Login */
+.mainbox {
+    margin-bottom: 75px;
+}
+
+
+/* Admin-Add Product */
+
+.add-product, .inventory-ctrl {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.formrow {
+    margin-top: 25px;
+}
+
+.add-button {
+    margin-top: 20px;
+}
+
+
+/*Admin - Manage Inventory*/
+.inventory-ctrl h3 {
+    margin-bottom: 20px;
+}
+.edit, .remove {
+    color: #ccc;
+    font-size: 12px;
+}

@@ -56,16 +56,24 @@ addProductCtrl.prototype.addProduct = function(){
 
 }
 
+
 // addProductCtrl.prototype.updateProduct = function(){
 // 	var ctrl = this;
+// addProductCtrl.prototype.updateProduct = function(){
+// 	var ctrl = this;
+
 
 // 	//TODO #2
 // 	//create product object, pass to plugin service
 // 	//Update text in button
 
+
+// addProductCtrl.prototype.deleteProduct = function(){
+// 	var ctrl = this;
 // 	ctrl.product_update_btn = "updating";
 // 	ctrl.productSrv.updateProduct(ctrl.product, ctrl.product.id);
 // }
+
 
 // addProductCtrl.prototype.deleteProduct = function(){
 // 	var ctrl = this;

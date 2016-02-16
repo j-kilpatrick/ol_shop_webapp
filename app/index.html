@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<!-- App Styles -->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 ​
 	<title></title>
 ​
+	<!-- Angular Dependencies
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-animate.js"></script>
+	<script type="text/javascript" src="assets/js/ui-bootstrap-1.1.2.js"></script>
+
 	
 	 <!-- Mobile Specific Metas
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 ​
     <!-- FONT
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900,100,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 	
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/ui-bootstrap-1.1.2-csp.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/skeleton.css">
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/app-redesign.css">
+    <!-- <link rel="stylesheet" href="assets/css/cart.css"> -->
   
 	<!-- Vendor -->
 	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
@@ -32,20 +42,20 @@
 	<script type="text/javascript" src="site/controllers/shopCtrl.js"></script>
 	<script type="text/javascript" src="site/controllers/adminCtrl.js"></script>
 	<script type="text/javascript" src="site/controllers/loginCtrl.js"></script>
+	<script type="text/javascript" src="site/controllers/cartCtrl.js"></script>
 	<script type="text/javascript" src="site/controllers/admin.addProductCtrl.js"></script>
-
 
 	<!-- App Services -->
 	<script type="text/javascript" src="site/services/api.srv.js"></script>
 	<script type="text/javascript" src="site/services/products.srv.js"></script>
 ​
 </head>
+
 <body ng-app="shopApp">
+
+<div ng-include="'site/partials/header.html'"></div>
 <div ui-view class="wrapper"></div>
-<a ui-sref="shop">Shop</a>
-<a ui-sref="admin">Admin</a>
-<a ui-sref="login">Login</a>
-​
-​
+<div ng-include="'site/partials/footer.html'"></div>
+
 </body>
 </html>
