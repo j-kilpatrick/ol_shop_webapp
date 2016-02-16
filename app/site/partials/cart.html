@@ -1,19 +1,17 @@
+<!-- Backdrop -->
+<div class="Modal-backdrop"></div>
+    <div class="Modal-holder" autoscroll="false">
+
 <!-- Cart -->
             <div class="row">
-                <div class="twelve columns">
-                    <button>Open Cart</button>
-                </div>
-            </div>
-​
-            <div class="row">
-                <div class="twelve columns">
+                <div class="twelve columns cart">
 ​
                     <div>
                         <div>
-                            <div class="row twelve columns">
-                                <h3>Shopping Cart</h3>
+                            <div class="row twelve columns modal-header">
+                                <h3 class="modal-title">Shopping Cart</h3>
                             </div>
-                            <div class="cart-table">
+                            <div class="cart-table modal-body">
                                 <table class="u-full-width">
                                     <thead>
                                         <tr>
@@ -25,9 +23,9 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Product 1</td>
-                                            <td>$30</td>
-                                            <td>1</td>
+                                            <td>{{ctrl.products[0].name}}</td>
+                                            <td>{{ctrl.products[0].price}}</td>
+                                            <td>{{ctrl.products[0].quantity}}</td>
                                             <td class="remove">
                                                 <button class="btn-remove">X</button>
                                             </td>
@@ -46,7 +44,7 @@
 ​
                             <div class="row">
                                 <div class="twelve columns">
-                                    <button>Continue Shopping</button>
+                                    <button ng-click="ctrl.$state.go('shop')">Continue Shopping</button>
                                     <button class="btn-checkout">Checkout</button>
                                 </div>
                             </div>
@@ -56,4 +54,5 @@
                 </div>
                 <!-- End Twelve -->
             </div>
+        </div>
             <!-- End Row -->

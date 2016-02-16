@@ -26,8 +26,15 @@
 ​
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div ui-view>
+<div ui-view> </div>
 
+  <div class="row">
+      <div class="twelve columns">
+          <button ng-click="ctrl.$state.go('shop.cart')">Open Cart</button>
+      </div>
+  </div>
+
+<div ui-view="shop.cart"></div>
      
     <div class="container">
      <!--  Hero    -->

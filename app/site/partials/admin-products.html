@@ -1,0 +1,111 @@
+    <!-- Container -->
+    <div class="container">
+
+        <form>
+            <!-- Add Product Form -->
+            <div class="add-product">
+                <h3>Add Product</h3>
+                <div class="row formrow">
+                    <div class=" col-md-6">
+                        <!-- Product Name -->
+                        <input class="form-control" placeholder="Product Name" type="text">
+                    </div>
+                    <div class=" col-md-6">
+                        <!-- Type -->
+                        <input id="inlineCheckbox1" type="checkbox" value="option1"> Skateboard
+                        <label class="checkbox-inline">
+                            <input id="inlineCheckbox2" type="checkbox" value="option2"> Longboard</label>
+                    </div>
+                </div>
+                <div class="row formrow">
+                    <div class=" col-md-6">
+                        <!-- Quantity -->
+                        <input class="form-control" placeholder="Quantity" type="text">
+                    </div>
+                    <div class=" col-md-6">
+                        <!-- Price -->
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                $
+                            </div>
+                            <input class="form-control" id="exampleInputAmount" placeholder="Price" type="text">
+                            <div class="input-group-addon">
+                                .00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row formrow">
+                    <div class=" col-md-4">
+                        <!-- Horizontal Image -->
+                        <input class="form-control" placeholder="Horizontal Image" type="text">
+                    </div>
+                    <div class=" col-md-4">
+                        <!-- Vertical Image -->
+                        <input class="form-control" placeholder="Vertical Image" type="text">
+                    </div>
+                    <div class=" col-md-4">
+                        <!-- Hero Graphic -->
+                        <input class="form-control" placeholder="Hero Graphic" type="text">
+                    </div>
+                </div>
+                <div class="row formrow">
+                    <div class="col-md-12">
+                        <!-- Description -->
+                        <textarea class="form-control" placeholder="Description">
+                        </textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary add-button">Add Product</button>
+            </div>
+        </form>
+        <!-- End Form -->
+
+        <hr>
+
+        <div class="inventory-ctrl">
+            <h3>Manage Inventory</h3>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Type</th>
+                        <th>Quantity</th>
+                        <th>Price ($)</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Model 01</td>
+                        <td>Longboard</td>
+                        <td>10</td>
+                        <td>125</td>
+                        <td class="edit">Edit</td>
+                        <td class="remove">X</td>
+                    </tr>
+                    <tr>
+                        <td>Model 02</td>
+                        <td>Skateboard</td>
+                        <td>15</td>
+                        <td>125</td>
+                        <td class="edit">Edit</td>
+                        <td class="remove">X</td>
+                    </tr>
+                    <tr>
+                        <td>Model 03</td>
+                        <td>Skatebaord</td>
+                        <td>15</td>
+                        <td>125</td>
+                        <td class="edit">Edit</td>
+                        <td class="remove">X</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+    <!-- /container -->
