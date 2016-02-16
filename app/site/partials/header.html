@@ -1,4 +1,5 @@
-        <!-- Static navbar -->
+<div ng-controller="headerCtrl">
+                <!-- Static navbar -->
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -18,9 +19,7 @@
                         <li><a ui-sref="shop">Longboards</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a ui-sref="login">Register <span class="sr-only">(current)</span></a></li>
-                        <li><a ui-sref="login">Login</a></li>
-                        <!-- Login: href="../navbar-static-top/" -->
+                        <li class="active"><a ui-sref="login">Login</a></li>
                         <li><a ui-sref="shop.cart">Cart</a></li>
                     </ul>
                 </div>
@@ -32,3 +31,4 @@
         <!-- Cart Modal -->
         <div ui-view="cart">  
         </div>
+</div>

@@ -6,17 +6,14 @@ function addProductCtrl($stateParams,api,productSrv){
 	ctrl.products = productSrv.products;
 
 	ctrl.categories = [
-		{label:'Cat1',value:'cat1'},
-		{label:'Cat2',value:'cat2'},
-		{label:'Cat3',value:'cat3'},
-		{label:'Cat4',value:'cat4'},
-		{label:'Cat5',value:'cat5'},
+		{label:'Skateboard',value:'Skateboard'},
+		{label:'Longboard',value:'Longboard'},
 	];
 	
 	ctrl.product = {};
 	ctrl.product_update_btn = 'Update Product';
 	ctrl.product_delete_btn = 'Remove Product';
-	
+
 	if($stateParams.productId != undefined){
 		productSrv.getProduct($stateParams.productId)
 		.then(function(res){

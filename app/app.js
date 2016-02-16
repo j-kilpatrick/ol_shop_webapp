@@ -39,15 +39,6 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
       controller:'shopCtrl as ctrl',
   })
 ;
-//  .state('cart.bd',{
-//    url:'/cart',
-//    views:{
-//      "cart":{
-//      templateUrl: "site/partials/cart.html",
-//    }
-   // controller:'shopCtrl as ctrl',
-//  }
-//  });
 
 	$httpProvider.interceptors.push(function(){
        return {
