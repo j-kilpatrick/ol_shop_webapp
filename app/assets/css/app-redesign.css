@@ -19,6 +19,14 @@ body {
     font-size: 16px;
 }
 
+.navbar {
+    margin-top: -25px;
+}
+
+.navbar-brand {
+    padding-left: 20px;
+}
+
 .decks {
     font-weight: 300;
 }
@@ -28,6 +36,12 @@ body {
 }
 
 /* Products */
+.products {
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 
 .products img {
     margin: auto;
@@ -67,7 +81,7 @@ body {
 
 .modal-bg {
     max-height: 300px;
-    padding: 0px;
+    width: 100%;
 }
 
 .modal-wrap .product-image {
@@ -89,6 +103,7 @@ body {
     text-align: right;
     font-size: 18px;
     font-weight: 400;
+    margin-top: 30px;
 }
 
 .modal-wrap .product-details .modal-price {
@@ -101,20 +116,33 @@ body {
     /*margin-top: 70px;*/
     min-width: 150px;
     text-align: right;
-    background: #fff;
-    color: #999;
-    font-size: 14px;
+    background: #3cb0fd;
+    color: #fff;
+    font-size: 11px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
-    border: none;
+    border: 1px solid #ccc;
+    padding: 0;
+    text-align: center;
 }
 
+
 .modal-wrap .product-details button:hover {
-    background: #3cb0fd;
+    background: #B0EBA8;
     color: white;
     border: none;
     text-decoration: none;
 }
+
+.modal-wrap .product-details .close-btn {
+    border: 1px solid #ccc;
+    background: #fff;
+    font-size: 11px;
+    color: #999;
+}
+
+
+/* Footer */
 
 
 .footer {
