@@ -21,7 +21,7 @@ function addProductCtrl($stateParams,api,productSrv){
 			//product category
 			
 			for(var category in ctrl.categories){
-			if(ctrl.product.category == ctrl.category[category].value){
+			if(ctrl.product.category == ctrl.category[category].label){
 
 		}
 	}
