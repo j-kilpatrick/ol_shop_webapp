@@ -6,5 +6,10 @@ function shopCtrl(productSrv, $state, $scope) {
 	ctrl.$state = $state;
 	ctrl.productSrv = productSrv;
 	ctrl.products = productSrv.products;
-	ctrl.product = productSrv.product;
+	
+	ctrl.categories = ctrl.productSrv.categories;
+
+	ctrl.filter = productSrv.filter;
+	
+
 };

@@ -5,11 +5,9 @@ function addProductCtrl($stateParams,api,productSrv){
 	ctrl.productSrv = productSrv;
 	ctrl.products = productSrv.products;
 
-	ctrl.categories = [
-		{label:'Skateboard',value:'Skateboard'},
-		{label:'Longboard',value:'Longboard'},
-	];
-	
+	ctrl.categories = ctrl.productSrv.categories;
+	ctrl.category =ctrl.categories[0];	
+
 	ctrl.product = {};
 	ctrl.product_update_btn = 'Update Product';
 	ctrl.product_delete_btn = 'Remove Product';
@@ -24,7 +22,7 @@ function addProductCtrl($stateParams,api,productSrv){
 			//product category
 			
 			for(var category in ctrl.categories){
-			if(ctrl.product.category == ctrl.category[category].value){
+			if(ctrl.product.category == ctrl.category[category].label){
 
 		}
 	}
@@ -41,7 +39,7 @@ addProductCtrl.prototype.addProduct = function(){
 	
 	var product = {
 		name: ctrl.name,
-		category: ctrl.category,
+		category: ctrl.category.label,
 		image: ctrl.image,
 		price: ctrl.price,
 		description: ctrl.description,

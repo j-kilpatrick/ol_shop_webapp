@@ -45,17 +45,16 @@
             
         </div>
      
-     
+     <!-- ng-repeat="cat in ctrl.categories" -->
      <!--  Filter / Browse   -->
      <div class="filters">
         <div class="row">
             <div class="eight columns">
                 <ul>
-                    <li>Category 1</li>
-                    <li class="active">Category 2</li>
-                    <li>Category 3</li>
-                    <li>Category 4</li>
-                    <li>Category 5</li>
+
+                    <li class="active" >Home</li>
+                    <li class="active"  ng-repeat="cat in ctrl.categories"><a ng-click="ctrl.showProductsByCat(cat.label)" >{{cat.label}}</a></li>
+
                 </ul>
             </div>   
             <div class="four columns u-pull-right">
@@ -69,8 +68,11 @@
      
      <!--  Products   -->
     <div class="row products-main">
-      <div class="four columns" ng-repeat="product in ctrl.products">
+
+      //Place a filter:
+      <div class="four columns" ng-repeat="product in ctrl.products| filter:ctrl.filter">
           <div class="product-img">
+
               <img ng-src="{{product.image}}" style="width:400 height:345">
           </div>
           <div class="product-info">

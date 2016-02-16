@@ -4,8 +4,12 @@ function ProductService($state,api){
 	//dependencies
 	this.api = api;
 	this.state = $state;
-	this.products = [];
-	this.product;
+	this.categories = [
+		{label:'Skateboards',value:'cat1'},
+		{label:'Cruisers',value:'cat2'},
+		{label:'Longboards',value:'cat3'}
+	];
+	this.filter = headerCtrl.filter
 	this.products = [
 		{"name":"The Six", "image":"/assets/img/1.png", "description":"", "category":"Skateboard", "price":120,
 		"quantity":1},
@@ -25,9 +29,10 @@ function ProductService($state,api){
 		"quantity":1},
 		{"name":"The Monaco", "image":"/assets/img/15.png", "description":"", "category":"Longboard", "price":120,
 		"quantity":1}
-];
-	
+	];
 }
+
+
 
 ProductService.prototype.getProducts = function(){
 	var _this = this;
@@ -65,7 +70,7 @@ ProductService.prototype.addProduct = function(product){
 // 		if(res.status === 200){
 // 			//product was updated successfully
 // 			_this.updateProductList(product,productId);
-// 			_this.state.go('admin.dash');
+// 			_ 
 // 		}
 // 	})
 // }
@@ -78,7 +83,7 @@ ProductService.prototype.addProduct = function(product){
 // 		if(res.status === 200){
 // 			//product was deleted successfully
 // 			_this.removeProduct(productId);
-// 			_this.state.go('admin.dash');
+// 			
 			
 // 		}
 // 	})
