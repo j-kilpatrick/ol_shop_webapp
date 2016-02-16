@@ -5,8 +5,10 @@
 </head>
 <body>
 
-	<div ui-view>
+	<div ui-view></div>
 	<h1>Login</h1>
+	
+	
 		
 		<!--Login Inputs-->
 		<input ng-model="ctrl.user" type="text" name="EmailAddress" value="" placeholder="Email Address" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
@@ -14,8 +16,6 @@
 		<input ng-model="ctrl.password" type="text" name="EmailAddress" value="" placeholder="Password" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
 
 		<input type="submit" value="{{ctrl.auth_btn}}" ng-click="ctrl.login()" />
-
-	</div>
 
 </body>
 </html>
