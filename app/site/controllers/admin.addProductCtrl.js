@@ -5,12 +5,20 @@ function addProductCtrl($stateParams,api,productSrv){
 	ctrl.productSrv = productSrv;
 	ctrl.products = productSrv.products;
 
+<<<<<<< HEAD
 	ctrl.categories = ctrl.productSrv.categories;
 	ctrl.category =ctrl.categories[0];	
+=======
+	ctrl.categories = [
+		{label:'Skateboard',value:'Skateboard'},
+		{label:'Longboard',value:'Longboard'},
+	];
+	
+>>>>>>> f1c32fa15fd77da874d7caccdf5b278d4b24fb9c
 	ctrl.product = {};
 	ctrl.product_update_btn = 'Update Product';
 	ctrl.product_delete_btn = 'Remove Product';
-	
+
 	if($stateParams.productId != undefined){
 		productSrv.getProduct($stateParams.productId)
 		.then(function(res){
