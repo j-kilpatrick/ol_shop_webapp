@@ -4,11 +4,6 @@
     margin: auto;
 }
 
-.row {
-    max-width: 960px;
-    margin: auto;
-}
-
 .Modal-backdrop
 {
 box-sizing: border-box;
@@ -25,7 +20,7 @@ box-sizing: border-box;
 .Modal-holder
 {
 box-sizing: border-box;
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: 0px;
   height:100%;
