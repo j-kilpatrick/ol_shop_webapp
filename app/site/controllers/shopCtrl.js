@@ -1,6 +1,6 @@
 app.controller('shopCtrl',shopCtrl);
 
-function shopCtrl(productSrv, $state) {
+function shopCtrl(productSrv, $state, $scope) {
 	console.log("Shop control!");
 	var ctrl = this;
 	ctrl.$state = $state;
@@ -13,7 +13,3 @@ function shopCtrl(productSrv, $state) {
 	
 
 };
-
-// show product only when : 
-// ng-show="ctrl.filter.showPrductByCat(product)"
-// set category through ng-click in menu.

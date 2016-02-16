@@ -4,13 +4,32 @@ function ProductService($state,api){
 	//dependencies
 	this.api = api;
 	this.state = $state;
-	this.products = [];
 	this.categories = [
 		{label:'Skateboards',value:'cat1'},
 		{label:'Cruisers',value:'cat2'},
 		{label:'Longboards',value:'cat3'}
 	];
 	this.filter = headerCtrl.filter
+	this.products = [
+		{"name":"The Six", "image":"/assets/img/1.png", "description":"", "category":"Skateboard", "price":120,
+		"quantity":1},
+		{"name":"The Vancouver", "image":"/assets/img/2.png", "description":"", "category":"Skateboard", "price":120,
+		"quantity":1},
+		{"name":"The Francisco", "image":"/assets/img/3.png", "description":"", "category":"Skateboard", "price":120,
+		"quantity":1},
+		{"name":"The Scotia", "image":"/assets/img/4.png", "description":"", "category":"Skateboard", "price":120,
+		"quantity":1},
+		{"name":"The Alberta", "image":"/assets/img/9.png", "description":"", "category":"Skateboard", "price":120,
+		"quantity":1},
+		{"name":"The Alps", "image":"/assets/img/6.png", "description":"", "category":"Skateboard", "price":120,
+		"quantity":1},
+		{"name":"The Mansfield", "image":"/assets/img/13.png", "description":"", "category":"Longboard", "price":120,
+		"quantity":1},
+		{"name":"The Monreal", "image":"/assets/img/16.png", "description":"", "category":"Longboard", "price":120,
+		"quantity":1},
+		{"name":"The Monaco", "image":"/assets/img/15.png", "description":"", "category":"Longboard", "price":120,
+		"quantity":1}
+	];
 }
 
 

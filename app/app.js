@@ -30,7 +30,7 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
   })
   .state('shop.cart',{
       url: '/cart',
-      templateUrl: "site/partials/cart.html",
+      templateUrl: "site/partials/cart-redesign.html",
       controller:'shopCtrl as ctrl',
   })
   .state('shop.product',{
