@@ -5,14 +5,8 @@ function addProductCtrl($stateParams,api,productSrv){
 	ctrl.productSrv = productSrv;
 	ctrl.products = productSrv.products;
 
-	ctrl.categories = [
-		{label:'Cat1',value:'cat1'},
-		{label:'Cat2',value:'cat2'},
-		{label:'Cat3',value:'cat3'},
-		{label:'Cat4',value:'cat4'},
-		{label:'Cat5',value:'cat5'},
-	];
-	
+	ctrl.categories = ctrl.productSrv.categories;
+	ctrl.category =ctrl.categories[0];	
 	ctrl.product = {};
 	ctrl.product_update_btn = 'Update Product';
 	ctrl.product_delete_btn = 'Remove Product';
@@ -44,7 +38,7 @@ addProductCtrl.prototype.addProduct = function(){
 	
 	var product = {
 		name: ctrl.name,
-		category: ctrl.category,
+		category: ctrl.category.label,
 		image: ctrl.image,
 		price: ctrl.price,
 		description: ctrl.description,
