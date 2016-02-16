@@ -1,17 +1,18 @@
 app.controller('cartCtrl', cartCtrl);
 
-function cartCtrl($uibModal, $log) {
+function cartCtrl($uibModal, $log, $state) {
 var ctrl = this;
+ctrl.$state= $state;
 
 	ctrl.items = ['item1', 'item2', 'item3'];
 
 	  ctrl.animationsEnabled = true;
 
 	  ctrl.open = function (size) {
-
+	  	console.log("open");
 	    var modalInstance = $uibModal.open({
 	      animation: ctrl.animationsEnabled,
-	      templateUrl: 'cart.html',
+	      templateUrl: 'site/partials/cart.html',
 	      controller: 'modalCtrl',
 	      size: size,
 	      resolve: {

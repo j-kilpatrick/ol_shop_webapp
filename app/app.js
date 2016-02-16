@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('shopApp',['ui.router', 'ui.bootstrap']);
+var app = angular.module('shopApp',['ui.router']);
 
 app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
 	
@@ -10,13 +10,13 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
 	
   .state('login',{
    url:'/login',
-   templateUrl:'site/partials/login.html',
+   templateUrl:'site/partials/sign-in.html',
    controller:'loginCtrl as ctrl',
   })
   .state('admin.add_product',{
     url:'/add_product',
     controller:'addProductCtrl as ctrl',
-    templateUrl:'site/partials/admin.add-product.html'
+    templateUrl:'site/partials/admin-products.html'
   })
   .state('admin',{
     url:'/admin',
@@ -25,15 +25,29 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
   })
   .state('shop',{
     url:'/shop',
-    templateUrl:'site/partials/shop-main.html',
+    templateUrl:'site/partials/home.html',
     controller:'shopCtrl as ctrl',
   })
-  .state('cart',{
-    url:'/cart',
-    templateUrl:'site/partials/cart.html',
-    controller:'cartCtrl as ctrl',
+  .state('shop.cart',{
+      url: '/cart',
+      templateUrl: "site/partials/cart.html",
+      controller:'shopCtrl as ctrl',
   })
-  ;
+  .state('shop.product',{
+      url: '/product',
+      templateUrl: "site/partials/product.html",
+      controller:'shopCtrl as ctrl',
+  })
+;
+//  .state('cart.bd',{
+//    url:'/cart',
+//    views:{
+//      "cart":{
+//      templateUrl: "site/partials/cart.html",
+//    }
+   // controller:'shopCtrl as ctrl',
+//  }
+//  });
 
 	$httpProvider.interceptors.push(function(){
        return {
