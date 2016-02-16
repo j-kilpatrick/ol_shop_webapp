@@ -8,19 +8,19 @@
                 <div class="row formrow">
                     <div class=" col-md-6">
                         <!-- Product Name -->
-                        <input class="form-control" placeholder="Product Name" type="text">
+                        <input class="form-control" placeholder="Product Name" type="text" ng-model="ctrl.name">
                     </div>
                     <div class=" col-md-6">
                         <!-- Type -->
-                        <input id="inlineCheckbox1" type="checkbox" value="option1"> Skateboard
+                        <input id="inlineCheckbox1" type="checkbox" ng-model="ctrl.category" ng-true-value = "'Skateboard'"> Skateboard
                         <label class="checkbox-inline">
-                            <input id="inlineCheckbox2" type="checkbox" value="option2"> Longboard</label>
+                            <input id="inlineCheckbox2" type="checkbox" ng-model="ctrl.category" ng-true-value = "'Longboard'"> Longboard</label>
                     </div>
                 </div>
                 <div class="row formrow">
                     <div class=" col-md-6">
                         <!-- Quantity -->
-                        <input class="form-control" placeholder="Quantity" type="text">
+                        <input class="form-control" placeholder="Quantity" type="text" ng-model="ctrl.quantity">
                     </div>
                     <div class=" col-md-6">
                         <!-- Price -->
@@ -28,7 +28,7 @@
                             <div class="input-group-addon">
                                 $
                             </div>
-                            <input class="form-control" id="exampleInputAmount" placeholder="Price" type="text">
+                            <input class="form-control" id="exampleInputAmount" placeholder="Price" type="text" ng-model="ctrl.price">
                             <div class="input-group-addon">
                                 .00
                             </div>
@@ -52,11 +52,11 @@
                 <div class="row formrow">
                     <div class="col-md-12">
                         <!-- Description -->
-                        <textarea class="form-control" placeholder="Description">
+                        <textarea class="form-control" placeholder="Description" ng-model="ctrl.description">
                         </textarea>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary add-button">Add Product</button>
+                <button type="submit" class="btn btn-primary add-button" ng-click="ctrl.addProduct()">Add Product</button>
             </div>
         </form>
         <!-- End Form -->
@@ -78,31 +78,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Model 01</td>
-                        <td>Longboard</td>
-                        <td>10</td>
-                        <td>125</td>
+                    <tr ng-repeat="product in ctrl.products">
+                        <td>{{product.name}}</td>
+                        <td>{{product.category}}</td>
+                        <td>{{product.image}}</td>
+                        <td>{{product.price}}</td>
+                        <td>{{product.description}}</td>
                         <td class="edit">Edit</td>
-                        <td class="remove">X</td>
+                        <td class="delete">Delete</td>
                     </tr>
-                    <tr>
-                        <td>Model 02</td>
-                        <td>Skateboard</td>
-                        <td>15</td>
-                        <td>125</td>
-                        <td class="edit">Edit</td>
-                        <td class="remove">X</td>
-                    </tr>
-                    <tr>
-                        <td>Model 03</td>
-                        <td>Skatebaord</td>
-                        <td>15</td>
-                        <td>125</td>
-                        <td class="edit">Edit</td>
-                        <td class="remove">X</td>
-                    </tr>
-                </tbody>
             </table>
 
         </div>
