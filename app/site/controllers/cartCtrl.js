@@ -12,7 +12,7 @@ ctrl.$state= $state;
 	  	console.log("open");
 	    var modalInstance = $uibModal.open({
 	      animation: ctrl.animationsEnabled,
-	      templateUrl: 'site/partials/cart.html',
+	      templateUrl: 'site/partials/cart-redesign.html',
 	      controller: 'modalCtrl',
 	      size: size,
 	      resolve: {
