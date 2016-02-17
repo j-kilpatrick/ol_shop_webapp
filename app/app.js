@@ -38,6 +38,11 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
       templateUrl: "site/partials/product.html",
       controller:'shopCtrl as ctrl',
   })
+  .state('shop.checkout',{
+      url: '/checkout',
+      templateUrl: "site/partials/checkout.html",
+      controller:'shopCtrl as ctrl',
+  })
 ;
 //  .state('cart.bd',{
 //    url:'/cart',

@@ -8,18 +8,18 @@
                 <div class="row formrow">
                     <div class=" col-md-6">
                         <!-- Product Name -->
-                        <input class="form-control" placeholder="Product Name" type="text">
+                        <input class="form-control" ng-model="product_name" placeholder="Product Name" type="text">
                     </div>
                     <div class=" col-md-6 category-type">
                         <!-- Type -->
-                        <input id="inlineCheckbox1" type="checkbox" value="option1"> Skateboard
-                            <input id="inlineCheckbox2" type="checkbox" value="option2"> Longboard
+                        <input id="inlineCheckbox1" type="checkbox" value="option1" ng-model="ctrl.type_skate"> Skateboard
+                            <input id="inlineCheckbox2" type="checkbox" value="option2 ng-model="ctrl.type_long> Longboard
                     </div>
                 </div>
                 <div class="row formrow">
                     <div class=" col-md-6">
                         <!-- Quantity -->
-                        <input class="form-control" placeholder="Quantity" type="text">
+                        <input class="form-control" ng-model="ctrl.quantity" placeholder="Quantity" type="text">
                     </div>
                     <div class=" col-md-6">
                         <!-- Price -->
@@ -37,21 +37,21 @@
                 <div class="row formrow">
                     <div class=" col-md-4">
                         <!-- Horizontal Image -->
-                        <input class="form-control" placeholder="Horizontal Image - 1h.png" type="text">
+                        <input class="form-control" ng-model="ctrl.img_horizontal" placeholder="Horizontal Image - 1h.png" type="text">
                     </div>
                     <div class=" col-md-4">
                         <!-- Vertical Image -->
-                        <input class="form-control" placeholder="Vertical Image - 1v.png" type="text">
+                        <input class="form-control" ng-model="ctrl.img_vertical" placeholder="Vertical Image - 1v.png" type="text">
                     </div>
                     <div class=" col-md-4">
                         <!-- Hero Graphic -->
-                        <input class="form-control" placeholder="Hero Graphic - 1.png" type="text">
+                        <input class="form-control" ng-model="ctrl.img_hero" placeholder="Hero Graphic - 1.png" type="text">
                     </div>
                 </div>
                 <div class="row formrow">
                     <div class="col-md-12">
                         <!-- Description -->
-                        <textarea class="form-control" placeholder="Description">
+                        <textarea ng-model="ctrl.description" class="form-control" placeholder="Description" required>
                         </textarea>
                     </div>
                 </div>
