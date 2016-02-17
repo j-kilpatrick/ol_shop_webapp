@@ -33,6 +33,10 @@ tr td {
 }
 
 .navbar {
+        
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;  
+    font-size: 12px;
     margin-top: -25px;
 }
 
@@ -322,6 +326,16 @@ tr td {
 }
 
 
+/* Forms */
+input:placeholder-shown, .category-type, input[type='checkbox'] {    
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;  
+    font-size: 12px;
+}
+
+#inlineCheckbox2 {
+    margin-left: 10px;
+}
 
 /* Header */
 .navbar {
@@ -329,7 +343,9 @@ tr td {
 }
 /* Footer */
 .footer-love {
-    color: #999;
+    color: #999;    
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;  
     font-size: 12px;
     text-align: center;
     border-top: 1px solid #ccc;
