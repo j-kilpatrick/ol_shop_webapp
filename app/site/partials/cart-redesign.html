@@ -6,50 +6,60 @@
 
     <div class="row">
         <div class="cart-wrapper">
-           <div class="cart-frame">
-            <div class="row">
-                <div class="col-sm-12">
-                    <table class="table table-hover cart-table">
-                        <thead>
-                            <tr>
-                                <th>Product</th>
-                                <th>Price ($)</th>
-                                <th>Quantity</th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>{{ctrl.products[0].name}}</td>
-                                <td>{{ctrl.products[0].price}}</td>
-                                <td>{{ctrl.products[0].quantity}}</td>
-                                <td class="edit">Edit</td>
-                                <td class="remove">X</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div class="cart-frame">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table class="table table-hover cart-table">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Price ($)</th>
+                                    <th>Quantity</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{{ctrl.products[0].name}}</td>
+                                    <td>{{ctrl.products[0].price}}</td>
+                                    <td>{{ctrl.products[0].quantity}}</td>
+                                    <td class="edit">Edit</td>
+                                    <td class="remove">X</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
-            <!-- /Row -->
-            <div class="row cost-calc">
-                <div class="col-sm-3 subtotal-cost">
-                    <p>Subtotal:</p>
+                <!-- /Row -->
+                <div class="row m-top30">
+                    <div class="col-sm-7 cost-calc">
+
+                        <div class="col-sm-3 subtotal-cost">
+                            <p>Subtotal:</p>
+                            $125
+                        </div>
+                        <div class="col-sm-3 taxes-cost">
+                            <p>Taxes:</p>
+                            $16.25
+                        </div>
+                        <div class="col-sm-3 shipping-cost">
+                            <p>Shipping:</p> 
+                            Free
+                        </div>
+                        <div class="col-sm-3 total-cost">
+                            <p>Total:</p>
+                            $141.25
+                        </div>
+
+                    </div>
+                    <div class="col-sm-5">
+                       <div class="pull-right">
+                        <button type="submit" ui-sref="shop" class="btn btn-primary btn-continue">Continue Shopping</button>
+                        <button type="submit" class="btn btn-primary btn-checkout">Checkout</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-3 taxes-cost">
-                    Taxes:
-                </div>
-                <div class="col-sm-3 shipping-cost">
-                    Shipping: Free
-                </div>
-                <div class="col-sm-3 total-cost">
-                    Total:
-                </div>
-            </div>
-            <div class="row">
-                <button type="submit" ui-sref="shop" class="btn btn-primary btn-continue">Continue Shopping</button>
-                <button type="submit" class="btn btn-primary btn-checkout">Checkout</button>
-            </div>
             </div>
         </div>
         <!-- /Cart Wrapper -->
